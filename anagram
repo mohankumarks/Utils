@@ -4,7 +4,7 @@ function anagram(input) {
     var objects = new Object();
 
     for (var i in input) {
-        var array = input[i].split("");
+        var array = input[i].toUpperCase().split("");
         array = array.sort();
         value = array.join("");
 
